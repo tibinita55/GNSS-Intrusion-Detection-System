@@ -2,6 +2,7 @@
 This repository contains the Python source code for a heuristic Intrusion Detection System designed to monitor Global Navigation Satellite Systems telemetry. The algorithm evaluates National Marine Electronics Association data streams to identify electronic warfare attacks such as radio frequency jamming and signal spoofing. The application was developed for maritime navigation security and tested using hardware-in-the-loop simulations with a commercial receiver and a software-defined radio.
 
 Application workflow
+
 Step 1: Initialization and baseline establishment. The script initializes an asynchronous graphical user interface using the Tkinter library. It begins parsing the incoming serial data from the receiver to establish a secure geographic baseline and record the initial internal system timestamp.
 
 Step 2: Continuous telemetry parsing. The core loop extracts specific variables from the incoming sentences. It isolates the Carrier-to-Noise density ratio, the Speed Over Ground, the current latitude, the current longitude and the broadcasted satellite time.
